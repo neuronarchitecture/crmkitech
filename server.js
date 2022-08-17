@@ -21,7 +21,7 @@ admin.initializeApp({
 
 const csrfMiddleware = csrf({ cookie: true });
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || "8080";
 const app = express();
 
 app.engine("html", require("ejs").renderFile);
